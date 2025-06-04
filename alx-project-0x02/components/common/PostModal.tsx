@@ -48,14 +48,23 @@ const PostModal: React.FC<PostModalProps> = ({ onClose, onSubmit }) => {
             >
               Content
             </label>
-            <input
-              type="text"
+            <textarea
+              rows={4}
+              placeholder="Enter content here..."
               id="content"
               name="content"
               value={post.content}
               onChange={handleChange}
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
+          </div>
+          <div className="flex justify-between items-center">
+            <button
+              type="submit"
+              className="px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
+            >
+              Add Post
+            </button>
           </div>
         </form>
       </div>
