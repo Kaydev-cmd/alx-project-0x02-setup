@@ -38,7 +38,7 @@ const PostModal: React.FC<PostModalProps> = ({ onClose, onSubmit }) => {
               name="title"
               value={post.title}
               onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 border text-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
           <div className="mb-4">
@@ -55,7 +55,7 @@ const PostModal: React.FC<PostModalProps> = ({ onClose, onSubmit }) => {
               name="content"
               value={post.content}
               onChange={handleChange}
-              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 border text-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
           <div className="flex justify-between items-center">
