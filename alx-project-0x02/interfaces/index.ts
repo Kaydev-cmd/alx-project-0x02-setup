@@ -14,6 +14,8 @@ export interface PostModalProps {
 }
 
 export interface ButtonProps {
-  title: string;
-  styles: string;
+  size: string;
+  styles: {
+    shape: string;
+  };
 }
