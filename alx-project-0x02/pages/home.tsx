@@ -64,7 +64,7 @@ const home: React.FC = () => {
             <Card key={index} title={post.title} content={post.content} />
           ))}
         </div>
-        {PostModal && (
+        {showModal && (
           <PostModal
             onClose={() => setShowModal(false)}
             onSubmit={handleAddPost}
