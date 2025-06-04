@@ -14,6 +14,12 @@ const PostModal: React.FC<PostModalProps> = ({ onClose, onSubmit }) => {
     setPost((prevPost) => ({ ...prevPost, [name]: value }));
   };
 
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    onSubmit(post);
+    onClose();
+  };
+
   return <div>PostModal</div>;
 };
 
