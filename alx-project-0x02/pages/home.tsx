@@ -47,10 +47,21 @@ const home: React.FC = () => {
       <main className="p-4">
         <div className="flex justify-between">
           <h1 className="text-2xl font-semibold">Featured Topics</h1>
+          <button
+            onClick={() => setShowModal(true)}
+            className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+          >
+            Add New Post
+          </button>
         </div>
         <div className="grid grid-cols-3 gap-4">
           {cardData.map((card, index) => (
             <Card key={index} title={card.title} content={card.content} />
+          ))}
+        </div>
+        <div className="grid grid-cols-3 gap-4">
+          {posts.map((post, index) => (
+            <Card key={index} title={post.title} content={post.content} />
           ))}
         </div>
       </main>
