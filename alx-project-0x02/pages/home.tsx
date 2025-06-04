@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "@/components/layout/Header";
 import { CardProps } from "@/interfaces";
 import Card from "@/components/common/Card";
+import PostModal from "@/components/common/PostModal";
+import { PostData } from "@/interfaces";
 
 const home: React.FC = () => {
   const cardData: CardProps[] = [
@@ -18,6 +20,20 @@ const home: React.FC = () => {
       content: "Create scalable UI eith component-driven architecture.",
     },
   ];
+  const [posts, setPosts] = useState<PostData[]>([
+    {
+      title: "Welcome to SoloForge",
+      content: "A platform where you build, learn, and grow autonomously.",
+    },
+    {
+      title: "Next.js + Tailwind",
+      content: "Master modern web development using the best tools.",
+    },
+    {
+      title: "Reusable Components",
+      content: "Create scalable UI eith component-driven architecture.",
+    },
+  ]);
   return (
     <div className="flex flex-col h-screen">
       <Header />
