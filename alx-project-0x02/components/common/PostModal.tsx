@@ -6,6 +6,14 @@ const PostModal: React.FC<PostModalProps> = ({ onClose, onSubmit }) => {
     title: "",
     content: "",
   });
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setPost((prevPost) => ({ ...prevPost, [name]: value }));
+  };
+
   return <div>PostModal</div>;
 };
 
