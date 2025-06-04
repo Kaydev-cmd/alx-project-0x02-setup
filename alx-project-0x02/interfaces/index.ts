@@ -12,3 +12,8 @@ export interface PostModalProps {
   onClose: () => void;
   onSubmit: (post: PostData) => void;
 }
+
+export interface ButtonProps {
+  title: string;
+  styles: string;
+}
