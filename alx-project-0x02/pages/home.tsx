@@ -34,6 +34,13 @@ const home: React.FC = () => {
       content: "Create scalable UI eith component-driven architecture.",
     },
   ]);
+
+  const [showModal, setShowModal] = useState(false);
+
+  const handleAddPost = (newPost: PostData) => {
+    setPosts((prevPosts) => [...prevPosts, newPost]);
+  };
+
   return (
     <div className="flex flex-col h-screen">
       <Header />
