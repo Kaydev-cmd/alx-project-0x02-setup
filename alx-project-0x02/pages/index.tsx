@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
+import Header from "@/components/layout/Header";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -12,7 +13,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 // });
 
 const Home: React.FC = () => {
-  return <div>Home</div>;
+  return <Header />;
 };
 
 export default Home;
